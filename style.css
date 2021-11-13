@@ -1,0 +1,25 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.wrapper > div {
+  background-color: #eee;
+  padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.wrapper__nested {
+  display: grid;
+  gap: 1em;
+}
+
+.wrapper__nested > div {
+  border: 1px solid #000;
+  padding: 1em;
+}
